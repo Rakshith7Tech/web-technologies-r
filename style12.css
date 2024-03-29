@@ -1,0 +1,26 @@
+.box{
+    border: 2px solid black;
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+}
+#box1{
+    background-color: blue;
+    opacity: 0.6; /*It is used to set & optimize the visibility*/
+    /*The default opacity is 1*/
+}
+#box2{
+    background-color: palevioletred;
+    position: relative;
+    bottom: 35px;
+    z-index: +1; /*It is used to overlap one box over or under another box*/
+    /*z-index doesn't work when position is static*/
+}
+#box3{
+    background-color: orange;
+    visibility: hidden; /*It is used to hide the content but the space will be remained constant*/
+}
+#box4{
+    background-color: yellow;
+    display: none; /*It is used to hide both content and the white space*/
+}

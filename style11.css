@@ -1,0 +1,10 @@
+.main{
+    font-size: 30px;
+}
+html{
+    font-size: 50px;
+}
+p{
+    font-size: 3em; /*It multipy with the size of parent container(main)*/
+    font-size: 2rem; /*It multiply with size of html container(html)*/
+}

@@ -1,0 +1,78 @@
+.box{
+    background-color: rgb(83, 109, 226);
+    text-align: center;
+}
+/*Animation*/
+.child{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(230, 209, 209);
+    position: relative;
+    animation-name: Rocky; /*It is a name of the animation*/
+    animation-duration: 7s; /*It represents the duration of the animation*/
+    animation-iteration-count: 3; /*It represents the time count of the animation*/
+    animation-timing-function: ease-in; /*It is used for slow start and fast end*/
+    /* animation-timing-function: ease-out;  */ /* It is used for fast start and slow end  */
+    /* animation-timing-function: ease-in-out;  */ /* It is used for slow start & end but fast in the middle */
+    animation-delay: 2s; /*It is used to start the animation after particular time set*/
+    animation-fill-mode: forwards; /*It is used to stop the animation at the end position*/
+}
+/*keyframe is used to target the animation*/
+@keyframes Rocky{
+    /*pixel-wise animation*/
+    from{
+        width: 200px;
+    }
+    to{
+        width: 1000px;
+    }
+    /*percent-wise animation*/
+    0%{
+        left: 0px;
+        top: 0px;
+    }
+    25%{
+        left: 200px;
+        top: 0px;
+    }
+    50%{
+        left: 200px;
+        top: 200px;
+    }
+    75%{
+        left: 0px;
+        top: 200px;
+    }
+    100%{
+        left: 0px;
+        top: 0px;
+    }
+}
+.box1{
+    background-color: rgb(83, 109, 226);
+    text-align: center;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+/*Transition & Transform*/
+.child1{
+    height: 200px;
+    width: 200px;
+    background-color: pink;
+    position: relative;
+    transition-property: background-color; /*It is used to transit the background color*/
+    transition-property: all; /*It is used to set the transition property to all other properties*/
+    transition-duration: 3s; /*It is used to set the duration for the transition*/
+    transition-timing-function: ease-in-out; /*It is used for slow start & end but fast in the middle*/
+    transition-delay: 1s; /*It is used to start the transition after particular time set*/
+}
+.child1:hover{
+    background-color: whitesmoke;
+    width: 300px;
+    height: 300px;
+    transform: rotate(360deg); /*It is used to rotate the container to a given degree after the transition effect*/
+    transform: skew(25deg); /*It is used to bend the container to a given degree*/
+    transform: scale(2); /*It is used to scaleup the container to the given size*/
+}

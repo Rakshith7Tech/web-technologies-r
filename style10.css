@@ -1,0 +1,27 @@
+.container{
+    border: 2px solid black;
+    background-color: rgb(224, 195, 224);
+    height: 500px;
+    display: flex; /*This is used to convert boxes to align in the parent box side by side*/
+    /*justify-content: It is used set the content in the row wise*/
+    justify-content: space-around; /*It provides equal space to the middle boxes & equal space for start & end boxes*/
+    justify-content: space-between; /*It provides equal space to the middle boxes but no space for start & end boxes*/
+    justify-content: space-evenly; /*It provides equal space for all the boxes including start & end boxes*/
+    justify-content: center; /*It aligns all the boxes to the center and equal space at both ends*/
+    flex-wrap: wrap; /*It is used shift the box to the next line space when there is shortage of space to its initial position*/
+    flex-wrap: wrap-reverse; /*It is just reverse of the wrap where last box stand still & other boxes will shift to the next line space*/
+    align-items: flex-start; /*It aligns the items in the starting position in column wise, also flex-end & center is used*/
+    /*Above all are flext box parent property*/
+}
+.box{
+    border: 1.8px solid rgb(109, 108, 108);
+    margin: 8px;
+    width: 150px;
+    height: 150px;
+}
+#box3{
+    border: 1.8px solid rgb(106, 23, 184);
+    flex-grow: 3; /*It used to provide more space than other boxes and when reaches its original position all box will get equal space*/
+    flex-shrink: 4; /*It used to provide less space than other boxes*/
+    align-self: flex-start /*It aligns the box at the starting position, also flex-end & center is used*/
+}

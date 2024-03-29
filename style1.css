@@ -1,0 +1,29 @@
+p{
+    color: rebeccapurple;
+    background-color: lightgrey;
+    border: 1px solid darkcyan;
+} 
+/*Element Selector - targetting a particular element*/ 
+
+.div1{
+    background-color: bisque;
+}
+/*Class Selector - targetting a particular class ( use . symbol) */
+
+#para1{
+    color: olivedrab;
+    border: 1px solid darkorange;
+}
+/*Id Selector - targetting a particular id (use # symbol) */
+
+h1, p{
+    background-color: rgb(216, 216, 213);
+    color: rgb(124, 92, 59);
+}
+/*Group Selector - targetting two or more elements*/
+
+.div1 p{
+    color: violet;
+    background-color: lightgoldenrodyellow;
+}
+/*Targetting a particulat element of a class*/

@@ -1,0 +1,14 @@
+p{
+    color: red;
+}
+/*Default color picker*/
+
+p{
+    color: rgb(102,255,179);
+}
+/*RGB color picker*/
+
+p{
+    color: #3f61a1;
+}
+/*Hex color picker*/

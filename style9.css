@@ -1,0 +1,47 @@
+.header{
+    border: 2.5px solid black;
+    text-align: center;
+    background-color: lightpink;
+}
+.box{
+    border: 2px solid midnightblue;
+    background-color: mistyrose;
+    width: auto;
+    height: 1000px;
+    margin: 20px auto;
+}
+.div1{
+    border: 1.8px solid rebeccapurple;
+    background-color: rgb(235, 235, 213);
+    margin: 10px;
+    padding: 10px;
+    width: 459.5px; /*One box consumes only the required space(inline element) and provide space to other boxes inside the main box*/
+    /*The outer box is block element and inner boxes are inline elements*/
+    /* display: inline; - This converts block into inline */
+    /* display: block; - This converts inline into block */
+    display: inline-block; /*It makes box content into line-block element where it consumes only the required space*/
+}
+
+/*Positions*/
+
+#id1{
+    border: 1.8px solid rebeccapurple;
+    position: sticky; /*The box sticks at the top when scrolled*/
+    top: 5px;
+}
+
+#id2{
+    border: 1.8px solid rgb(15, 173, 208);
+    position: absolute; /*It is used to set the position within & outside the parent box*/
+    position: fixed; /*The box is fixed at a certain position when scrolled*/
+    /* left: 20px;
+    top: 30px; */
+    right: 30px;
+    bottom: 25px;
+}
+#id3:hover{ /*hover is used to show the pop-up of the box to slightly from its fixed position*/
+    border: 1.8px solid rgb(39, 189, 39);
+    position: relative; /*It is used to set the position within the parent box only*/
+    right: 15px;
+    bottom: 5px;
+}

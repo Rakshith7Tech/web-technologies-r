@@ -1,0 +1,26 @@
+.para1{
+    color: aliceblue;
+    height: 1000px;
+    width: 1250px;
+    border: 2px solid mediumvioletred;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+    background-image: url(/CSS/Images/web_dev_logo.jpg);
+
+    /*To repeat any image where the border is not completely filled out use background repeat*/
+    /* background-repeat: repeat;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-repeat: no-repeat; */
+    
+    /*To change the position of the image use background position*/
+    /* background-position: top left;
+    background-position: top center;
+    background-position: top right;
+    background-position: center left;
+    background-position: center center;
+    background-position: center right;
+    background-position: bottom left;
+    background-position: bottom center;
+    background-position: bottom right; */
+}
